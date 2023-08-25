@@ -11,10 +11,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    position: sticky
+    position: sticky;
     top: 0;
     cursor: pointer;
 }
+
 
 .nav-list{
     width: 25%;
@@ -23,6 +24,11 @@
     float: right;  
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 15px;
+    background-color: green;
+}
+
+.nav-list li a:hover {
+    color: red
 }
 
 .nav-list li a {
