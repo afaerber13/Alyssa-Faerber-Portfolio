@@ -1,28 +1,35 @@
 * {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin:0; padding:0;
     box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+}
+
+.header{
+    position: relative;
+    top:0; left:0; right:0;
+    z-index: 1000;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    display: flex;
+    align-items: center;
+    padding:1.2rem 7%;
 }
 
 
 h1 {
-    font-size: 35px;
+    color:#333;
+    font-size: 40px;
+    margin-right: auto;
 }
 
 h2 {
     font-size: 25px;
 }
 
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: sticky;
-    top: 0;
-    cursor: pointer;
-}
-
-
-.nav-list{
+.navbar{
     width: 100%;
     display: flex;
     list-style-type: none; 
@@ -30,13 +37,20 @@ h2 {
     font-size: 15px;
 }
 
-.nav-list li a:hover {
+.navbar a:hover {
     color: red
 }
 
-.nav-list li a {
+.navbar a {
     color:midnightblue;
-    margin-right: 20px;
+    margin-right: 150px;
+}
+
+.about-me {
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(5,82,129,1) 100%);
+    padding: 100px 0 20px 0;
+    text-align: center;
 }
 
 .column {
@@ -71,7 +85,7 @@ img {
     display: inline-block;
     padding: 10px;
     color: white;
-    background-color: mediumslateblue;
+    background-color: rgba(5,82,129,1);
     text-align: center;
     cursor: pointer;
     width: 50%;
@@ -81,10 +95,27 @@ img {
     background-color: #555;
 }
 
+
+.contact-me {
+    list-style: none;
+}
+
 .contact-me li a {
     width: 100%;
     display: flex;
     list-style-type: none; 
     float: right;  
     font-size: 15px;
-  }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    color:midnightblue;
+    margin-right: 20px;
+}
+
+.contact-me li a:hover {
+    color: red
+}
