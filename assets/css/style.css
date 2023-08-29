@@ -7,26 +7,35 @@
     font-weight: lighter;
 }
 
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 96px;
+}
+
 .header{
     position: relative;
     top:0; left:0; right:0;
-    z-index: 1000;
     background: #fff;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    box-shadow: 0 8px 16px rgba(0,0,0,.1);
     display: flex;
     align-items: center;
-    padding:1.2rem 7%;
+    padding: 20px;
 }
 
 
-h1 {
+.header h1 {
     color:#333;
     font-size: 40px;
-    margin-right: auto;
 }
 
 h2 {
     font-size: 25px;
+}
+
+h3 {
+    font-size: 16px;
 }
 
 .navbar{
@@ -34,7 +43,7 @@ h2 {
     display: flex;
     list-style-type: none; 
     float: right;  
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .navbar a:hover {
@@ -51,6 +60,7 @@ h2 {
     background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(5,82,129,1) 100%);
     padding: 100px 0 20px 0;
     text-align: center;
+    font-size: 16px;
 }
 
 .column {
@@ -89,6 +99,7 @@ img {
     text-align: center;
     cursor: pointer;
     width: 50%;
+    font-size: 10px;
 }
 
 .button:hover {
@@ -97,10 +108,17 @@ img {
 
 
 .contact-me {
+    position: relative;
+    top:0; left:0; right:0;
+    background: #fff;
+    box-shadow: 0 8px 16px rgba(0,0,0,.1);
+    display: flex;
+    align-items: center;
+    padding: 20px;
     list-style: none;
 }
 
-.contact-me li a {
+.contact-me a {
     width: 100%;
     display: flex;
     list-style-type: none; 
@@ -113,9 +131,9 @@ img {
     top: 0;
     cursor: pointer;
     color:midnightblue;
-    margin-right: 20px;
+    margin-right: 150px;
 }
 
-.contact-me li a:hover {
+.contact-me a:hover {
     color: red
 }
