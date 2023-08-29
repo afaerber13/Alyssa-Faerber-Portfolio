@@ -1,3 +1,6 @@
+:root {
+    --border:1.6px solid rgba(0,0,0,.2)
+}
 * {
     margin:0; padding:0;
     box-sizing: border-box;
@@ -137,3 +140,24 @@ img {
 .contact-me a:hover {
     color: red
 }
+
+@media screen and (min-width: 768px) {
+    .card-column {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+      .card-column:last-child {
+        flex-grow: 1;
+      }
+    }
+
+    @media screen and (min-width: 992px) {
+        header {
+          width: 75%;
+        }
+      
+        .card-column {
+          flex: 0 0 33.333%;
+          max-width: 33.333%;
+        }
+      }
