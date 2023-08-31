@@ -66,6 +66,11 @@ h3 {
     font-size: 16px;
 }
 
+.about-me img {
+    width: 10%;
+
+}
+
 .column {
     float: left;
     width: 50%;
@@ -140,20 +145,6 @@ img {
     color: red
 }
 
-
-.footer {
-    margin-top: 200px;
-    display: flex;
-}
-
-.flex{
-    display: flex;
-    justify-content: space-between;
-}
-
-.flex li{
-    margin: 0 150px 0 100px;
-}
 @media screen and (max-width: 768px) {
    
     }
